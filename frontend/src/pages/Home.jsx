@@ -10,9 +10,9 @@ import { useEffect } from "react";
 import SkillCard from "../components/SkillCard";
 import screenshot from "../assets/screenshot.png";
 import grid from "../assets/grid.png";
-import bike from "../assets/project images/bike.png";
-import pcdynamic from "../assets/project images/pcDynamic.png";
-import gameReview from "../assets/project images/gameReview.png";
+import bike from "../assets/bike.png";
+import pcdynamic from "../assets/pcDynamic.png";
+import gameReview from "../assets/gameReview.png";
 import CarouselItem from "../components/CarouselItem";
 
 const Home = () => {
@@ -21,7 +21,7 @@ const Home = () => {
       title: "Bike Website",
       description: "A bike catalogue website landing page.",
       img: bike,
-      gitlink: "",
+      gitlink: "https://github.com/Avagel/Bike-Website",
       livelink: "",
       tags: ["HTML", "CSS", "JS"],
     },
@@ -37,7 +37,7 @@ const Home = () => {
       title: "PC Dynamic",
       description: "A laptop sales website landing page.",
       img: pcdynamic,
-      gitlink: "",
+      gitlink: "https://github.com/Avagel/pc-dynamic",
       livelink: "",
       tags: ["HTML", "CSS"],
     },

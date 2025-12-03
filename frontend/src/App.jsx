@@ -14,7 +14,7 @@ function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <div className="relative container h-screen">
+    <div className="relative  h-screen">
       <nav
         className={`w-full items-center transition-all duration-300 ${
           isMenuOpen ? "h-70 " : "h-11"
