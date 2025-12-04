@@ -247,7 +247,7 @@ const Home = () => {
                 <Github className="shrink-0" size={15} />
               </Link>
               <Link
-                to="mailto:akanumeiruoghene@gmail.com"
+                to="www.linkedin.com/in/akanume-iruoghene-437015342"
                 className="text-custom-blue p-2 rounded-md bg-custom-darkblue hover:shadow-xs hover:scale-110 transition-all duration-300 shadow-custom-blue"
               >
                 <Linkedin className="shrink-0" size={15} />
