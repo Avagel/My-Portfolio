@@ -196,7 +196,7 @@ const Home = () => {
           <div className="w-4 lg:ml-5 h-1 rounded-full bg-custom-blue"></div>
         </div>
 
-        <div className="hidden lg:block w-full mt-10 h-130  rounded-md relative overflow-hidden">
+        <div className="hidden md:block lg:block w-full mt-10 h-130  rounded-md relative overflow-hidden">
           <Carousel
             className="[scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
             onSlideChange={(index) => console.log("onSlideChange()", index)}
@@ -207,7 +207,13 @@ const Home = () => {
           </Carousel>
         </div>
 
-        <div className="mt-5 lg:mt-10 flex flex-wrap gap-3">
+        <div className="lg:hidden md:hidden mt-5 lg:mt-10 flex justify-center flex-wrap gap-3">
+          {[...projects, ...otherProjects].map((project, index) => {
+            return <ProjectCard key={index} data={project} />;
+          })}
+        </div>
+
+        <div className="hidden  md:flex mt-5 lg:mt-10 lg:flex flex-wrap gap-3">
           {otherProjects.map((project, index) => {
             return <ProjectCard key={index} data={project} />;
           })}
@@ -235,7 +241,7 @@ const Home = () => {
                 <Mail className="shrink-0" size={15} />
               </Link>
               <Link
-                to="mailto:akanumeiruoghene@gmail.com"
+                to="https://github.com/Avagel"
                 className="text-custom-blue p-2 rounded-md bg-custom-darkblue hover:shadow-xs hover:scale-110 transition-all duration-300 shadow-custom-blue"
               >
                 <Github className="shrink-0" size={15} />
