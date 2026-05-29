@@ -9,6 +9,8 @@ import "aos/dist/aos.css";
 import SkillCard from "../components/SkillCard";
 import bike from "../assets/bike.png";
 import pcdynamic from "../assets/pcDynamic.png";
+import habit from "../assets/habit.png";
+import ichat from "../assets/ichart.png";
 import logo from "../assets/Avagel SVG.svg";
 import gameReview from "../assets/gameReview.png";
 import CarouselItem from "../components/CarouselItem";
@@ -43,6 +45,7 @@ const Home = () => {
     },
     {
       title: "Habit Tracker",
+      img: habit,
       description:
         "A full-stack habit tracking app to build consistency and monitor daily progress.",
       gitlink: "https://github.com/Avagel/Habit-Tracker",
@@ -50,12 +53,22 @@ const Home = () => {
       tags: ["Next.js", "Playwright", "Vitest"],
     },
     {
+      img: pcdynamic,
       title: "Invoice App",
       description:
         "A clean invoice management app to create, edit and track payment statuses.",
       gitlink: "https://github.com/Avagel/Invoice-App",
       livelink: "https://invoice-app-two-lac.vercel.app",
       tags: ["React"],
+    },
+    {
+      img: pcdynamic,
+      title: "I-charts",
+      description:
+        "A Realtime crypto charts viewing website built with Vue js and Binance API.",
+      gitlink: "https://github.com/Avagel/I-Charts.git",
+      livelink: "i-charts.vercel.app",
+      tags: ["Vue | Binance API"],
     },
   ];
 
@@ -134,7 +147,7 @@ const Home = () => {
       {/* Hero */}
       <div
         id="home"
-        className=" h-screen flex flex-col items-center justify-center lg:w-[1000px] "
+        className="  h-screen flex flex-col items-center justify-center lg:w-[1000px] "
       >
         <div className="flex flex-col text-center items-center py-10 px-5">
           <DotMatrixLogo dotColor="#5fcdd9" svgUrl={logo} />
@@ -222,10 +235,8 @@ const Home = () => {
 
         {/* Desktop carousel */}
         <div className="hidden md:block lg:block w-full mt-10 h-130 rounded-3xl relative overflow-hidden">
-          <Carousel
-            className="[scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
-            onSlideChange={(index) => console.log("onSlideChange()", index)}
-          >
+          <Carousel className="[scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+            <img src="" alt="" />
             {projects.map((project, index) => (
               <CarouselItem key={index} data={project} />
             ))}
@@ -248,7 +259,11 @@ const Home = () => {
       </div>
 
       {/* Contact */}
-      <div id="contact" data-aos="fade-up">
+      <div
+        id="contact"
+        className="flex flex-col items-center"
+        data-aos="fade-up"
+      >
         {/* Fixed: removed lg:hidden so heading is visible on all screen sizes */}
         <div className="flex flex-col items-center lg:items-start">
           <p className="font-bold text-xl lg:text-4xl">contact me</p>
