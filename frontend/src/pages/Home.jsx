@@ -62,7 +62,7 @@ const Home = () => {
       tags: ["React"],
     },
     {
-      img: pcdynamic,
+      img: ichat,
       title: "I-charts",
       description:
         "A Realtime crypto charts viewing website built with Vue js and Binance API.",
@@ -236,7 +236,6 @@ const Home = () => {
         {/* Desktop carousel */}
         <div className="hidden md:block lg:block w-full mt-10 h-130 rounded-3xl relative overflow-hidden">
           <Carousel className="[scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
-            <img src="" alt="" />
             {projects.map((project, index) => (
               <CarouselItem key={index} data={project} />
             ))}

@@ -12,7 +12,7 @@ const CarouselItem = ({ data }) => {
         className="absolute inset-0 h-full object-cover w-full"
         alt={title}
       />
-      <div className="z-3 pt-3 flex flex-col justify-end pb-5 items-center bg-zinc-900/50 w-full h-full text-white p-3">
+      <div className="absolute pt-3 flex flex-col justify-end pb-5 items-center bg-zinc-900/50 w-full h-full text-white p-3">
         <p className="font-medium text-2xl">{title}</p>
         <p
           className="font-light text-sm my-2 mb-3 text-center"
