@@ -291,7 +291,7 @@ const Home = () => {
               <Github className="shrink-0" size={15} />
             </Link>
             <Link
-              to="https://www.linkedin.com/in/akanume-iruoghene-437015342" // Fixed: added https://
+              to="https://linkedin.com/in/iruoghene-akanume-437015342" // Fixed: added https://
               className="text-custom-blue p-2 rounded-md bg-custom-darkblue hover:shadow-xs hover:scale-110 transition-all duration-300 shadow-custom-blue"
             >
               <Linkedin className="shrink-0" size={15} />
