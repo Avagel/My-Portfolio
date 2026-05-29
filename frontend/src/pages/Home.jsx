@@ -13,6 +13,7 @@ import habit from "../assets/habit.png";
 import ichat from "../assets/ichart.png";
 import logo from "../assets/Avagel SVG.svg";
 import gameReview from "../assets/gameReview.png";
+import profile from "../assets/profile.png";
 import CarouselItem from "../components/CarouselItem";
 import DotMatrixLogo from "../components/DotMatrixLogo";
 // Removed unused imports: screenshot, grid
@@ -182,8 +183,10 @@ const Home = () => {
           <p className="font-bold text-xl lg:text-4xl">about me</p>
           <div className="w-4 h-1 rounded-full bg-custom-blue"></div>
         </div>
-        <div className="lg:flex lg:flex-row-reverse lg:gap-8 justify-end lg:mt-10">
-          <div className="h-50 rounded-md bg-white my-5 lg:my-0 lg:w-70 lg:shrink-0"></div>
+        <div className="lg:flex lg:gap-8 justify-start items-center lg:mt-10">
+          <img src={profile} className=" w-auto h-60 rounded-md" />
+          {/* <div className="h-80 overflow-hidden rounded-md bg-white my-5 lg:my-0 lg:w-70 lg:shrink-0">
+          </div> */}
           <p className="text-xs text-center max-w-[600px] font-normal lg:text-sm lg:text-justify lg:font-light leading-6">
             I'm Akanume Iruoghene, a passionate Software Engineer who loves
             turning ideas into intuitive, high-performing web and mobile
